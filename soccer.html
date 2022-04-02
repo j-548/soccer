@@ -1,0 +1,96 @@
+<!-- Jeff Abbott 11/28/21 Week 5 Assignment -->
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Soccer Registration Form</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header>
+  </header>
+
+  <nav>
+  </nav>
+
+  <main>
+
+    <div class="col-25 register-page">
+
+      <div id="registerForm" class="registerForm">
+
+        <!-- Register form that takes 3 inputs. Each name is sorted by age and counter is incremented one for each submission -->
+        <h2 class="soccerForm">Soccer Register Form</h2>
+
+        <div id="inputs" class="">
+
+          <input class="center col-75 txtCenter" id="firstName" placeholder="First Name" name="firstName" value="">
+          <input class="center col-75 txtCenter" id="lastName" placeholder="Last Name" name="lastName" value="">
+          <input class="center col-25 txtCenter" id="age" placeholder="Age" name="age" value="">
+
+        </div>
+
+        <button class="submitBtn" type="submit" name="button" onclick="submitScript()">Submit</button>
+
+      </div>
+
+    </div>
+
+    <div class="counters center">
+      <div class="col-33">
+        <p class="center no-margin">Junior League</p>
+        <p class="center no-margin">Ages 4-7</p>
+      </div>
+      <div class="col-33">
+        <p class="center no-margin">Intermediate League</p>
+        <p class="center no-margin">Ages 8-11</p>
+      </div>
+      <div class="col-33">
+        <p class="center no-margin">Senior League</p>
+        <p class="center no-margin">Ages 12-15</p>
+      </div>
+    </div>
+
+    <!-- elements for counter -->
+    <div class="counters center">
+      <p id="jCounter">0</p>
+      <p id="iCounter">0</p>
+      <p id="sCounter">0</p>
+    </div>
+
+    <!-- elements to hold input fields -->
+    <div class="leagues center">
+
+      <div id="jDiv" class="junrLeague box">
+        <p id="jFirstName"></p>
+        <p id="jLastName"></p>
+        <p id="jAge"></p>
+      </div>
+
+      <div id="iDiv" class="intrmdLeague box">
+        <p id="iFirstName"></p>
+        <p id="iLastName"></p>
+        <p id="iAge"></p>
+      </div>
+
+      <div id="sDiv" class="senrLeague box">
+        <p id="sFirstName"></p>
+        <p id="sLastName"></p>
+        <p id="sAge"></p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+  </footer>
+  <script type="text/javascript" src="js/submitScript.js"></script>
+</body>
+
+</html>
